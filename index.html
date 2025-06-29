@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirección Aleatoria</title>
+  <script>
+    window.onload = function() {
+      // Define tus enlaces
+      const enlaces = [
+        "https://docs.google.com/forms/d/e/1FAIpQLSeiMBKoUBCUXVRU5IZXlqJfZMEiShE40r5oD0SYfTihJezkHA/viewform?usp=dialog",
+        "https://docs.google.com/forms/d/e/1FAIpQLSelZ99QosqkR2H5MymSSSMIt3MOTvcGrnGbOPW-_U7l5fNXtg/viewform?usp=dialog"
+      ];
+
+      // Redirige aleatoriamente
+      const destino = enlaces[Math.floor(Math.random() * enlaces.length)];
+      window.location.href = destino;
+    };
+  </script>
+</head>
+<body>
+  <p>Redirigiendo...</p>
+</body>
+</html>
